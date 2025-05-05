@@ -48,7 +48,7 @@ document.querySelector('.download-btn').addEventListener('click', () => {
     }
   
     const closeBtn = document.createElement('button')
-    closeBtn.textContent = '×'
+    closeBtn.textContent = 'x'
     closeBtn.style.position = 'absolute'
     closeBtn.style.top = '10px'
     closeBtn.style.right = '20px'
