@@ -545,7 +545,16 @@ footer {
     }
 }
 
+@media (max-width: 905px) {
+    #logo {
+        display: none;
+    }
+}
+
 @media (max-width: 768px) {
+    #logo {
+        display: block;
+    }
     nav {
         justify-content: space-between;
         padding: 0 20px;
