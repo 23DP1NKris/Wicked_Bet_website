@@ -31,9 +31,9 @@ document.querySelector('.download-btn').addEventListener('click', () => {
     zipBtn.style.boxSizing = 'border-box'
     zipBtn.style.marginBottom = '10px'
     zipBtn.onclick = () => {
-      window.location.href = 'src/downloads/wickedbet.zip'
-      modal.remove()
-      enableScroll()
+        window.location.href = 'src/downloads/wickedbet.zip'
+        modal.remove()
+        enableScroll()
     }
   
     const githubBtn = document.createElement('button')
@@ -42,13 +42,13 @@ document.querySelector('.download-btn').addEventListener('click', () => {
     githubBtn.style.width = '100%'
     githubBtn.style.boxSizing = 'border-box'
     githubBtn.onclick = () => {
-      window.open('https://github.com/23DP1NKris/Wicked_Bet', '_blank')
-      modal.remove()
-      enableScroll()
+        window.open('https://github.com/23DP1NKris/Wicked_Bet', '_blank')
+        modal.remove()
+        enableScroll()
     }
   
     const closeBtn = document.createElement('button')
-    closeBtn.textContent = 'x'
+    closeBtn.textContent = '×'
     closeBtn.style.position = 'absolute'
     closeBtn.style.top = '10px'
     closeBtn.style.right = '20px'
@@ -58,10 +58,10 @@ document.querySelector('.download-btn').addEventListener('click', () => {
     closeBtn.style.fontSize = '2rem'
     closeBtn.style.cursor = 'pointer'
     closeBtn.onclick = () => {
-      modal.remove()
-      enableScroll()
+        modal.remove()
+        enableScroll()
     }
-  
+    
     modalContent.appendChild(title)
     modalContent.appendChild(zipBtn)
     modalContent.appendChild(githubBtn)
@@ -70,35 +70,35 @@ document.querySelector('.download-btn').addEventListener('click', () => {
     document.body.appendChild(modal)
   
     modal.addEventListener('click', (e) => {
-      if (e.target === modal) {
-        modal.remove()
-        enableScroll()
-      }
+        if (e.target === modal) {
+            modal.remove()
+            enableScroll()
+        }
     })
   
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
-        modal.remove()
-        enableScroll()
-      }
+        if (e.key === 'Escape') {
+            modal.remove()
+            enableScroll()
+        }
+        })
     })
-  })
   
-  document.querySelector('.learn-btn').addEventListener('click', () => {
-    const link = document.createElement('a')
-    link.href = 'src/downloads/user_guide.pdf'
-    link.download = 'WickedBet_UserGuide.pdf'
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
-  })
+    document.querySelector('.learn-btn').addEventListener('click', () => {
+        const link = document.createElement('a')
+        link.href = 'src/downloads/user_guide.pdf'
+        link.download = 'WickedBet_UserGuide.pdf'
+        document.body.appendChild(link)
+        link.click()
+        document.body.removeChild(link)
+    })
   
-  function disableScroll() {
-    document.body.style.overflow = 'hidden'
-    document.body.style.height = '100%'
-  }
+    function disableScroll() {
+        document.body.style.overflow = 'hidden'
+        document.body.style.height = '100%'
+    }
   
-  function enableScroll() {
-    document.body.style.overflow = ''
-    document.body.style.height = ''
-  }
+    function enableScroll() {
+        document.body.style.overflow = null
+        document.body.style.height = null
+    }
