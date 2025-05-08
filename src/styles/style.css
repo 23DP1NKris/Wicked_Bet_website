@@ -302,9 +302,9 @@ nav a:hover {
 
 .screenshot img {
     height: 100%;
-    width: auto;
+    width: 97%;
     object-fit: contain;
-    border-radius: 10px;
+    border-radius: 15px;
     display: block;
 }
 
